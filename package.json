@@ -1,0 +1,24 @@
+{
+  "name": "quiz-app",
+  "version": "1.0.0",
+  "description": "this is an awesome app",
+  "main": "index.js",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bejanaf/quiz-app.git"
+  },
+  "author": "Bejan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bejanaf/quiz-app/issues"
+  },
+  "homepage": "https://github.com/bejanaf/quiz-app#readme",
+  "devDependencies": {
+    "snowpack": "^3.3.3"
+  }
+}
