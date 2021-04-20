@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+}
+
+header {
+  background-color: blueviolet;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid grey;
+}
+
+.question {
+  background-color: hotpink;
+  border-bottom: 3px solid grey;
+  text-align: center;
+  margin: 5rem;
+  padding: 10px;
+}
+
+.article-bookmark {
+  position: relative;
+  left: 20%;
+  bottom: 2.2rem;
+  width: 4rem;
+  margin-bottom: -2.2rem; /* wieder abziehen was ich oben beigegeben habe */
+}
+
+.tags {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.list {
+  border: 3px solid grey;
+  padding: 3px;
+  border-radius: 20%;
+}
+
+.nav-img {
+  width: 5rem;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.footer-bottom {
+  xposition: fixed;
+  display: flex;
+  justify-content: center;
+  border-top: 3px grey solid;
+  background-color: purple;
+}
+
+.formular {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-pic {
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.profile-box {
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+p {
+  margin: 15px 10px;
+}
+
+.button-logout {
+  display: flex;
+}

@@ -4,10 +4,108 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Willkommen beim legänderen Quiz!</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Hello World</h1>
-    <p>Test</p>
+    <header>
+      <h1>Quiz-App</h1>
+    </header>
+
+    <main>
+      <article class="question">
+        <img
+          class="article-bookmark"
+          src="./images/Bookmark.png"
+          als="bookmark logo"
+        />
+        <h2>Question</h2>
+        <p>Hier kommt eine Frage?</p>
+        <!--- summary -->
+        <details>
+          <summary>Antworten gibt es hier!</summary>
+          <p>Hier stehen die Antworten</p>
+        </details>
+
+        <ul class="tags">
+          <li class="list item1">Fische</li>
+          <li class="list item2">Angel</li>
+          <li class="list item3">Futter</li>
+          <li class="list item4">Wellen</li>
+        </ul>
+      </article>
+
+      <article class="question">
+        <img
+          class="article-bookmark"
+          src="./images/Bookmark.png"
+          als="bookmark logo"
+        />
+        <h2>Question</h2>
+        <p>Hier kommt eine Frage?</p>
+        <!--- summary -->
+        <details open>
+          <summary>Antworten gibt es hier!</summary>
+          <p>Hier stehen die Antworten bereits mit aufgeklappt!</p>
+        </details>
+
+        <ul class="tags">
+          <li class="list item5">Fische</li>
+          <li class="list item6">Angel</li>
+          <li class="list item7">Futter</li>
+          <li class="list item8">Wellen</li>
+        </ul>
+      </article>
+
+      <article class="question">
+        <img
+          class="article-bookmark"
+          src="./images/Bookmark.png"
+          als="bookmark logo"
+        />
+        <h2>Question</h2>
+        <p>Hier kommt eine Frage?</p>
+        <!--- summary and details -->
+        <details>
+          <summary>Antworten gibt es hier!</summary>
+          <p>Hier stehen die Antworten</p>
+        </details>
+
+        <ul class="tags">
+          <li class="list item9">Fische</li>
+          <li class="list item10">Angel</li>
+          <li class="list item11">Futter</li>
+          <li class="list item12">Wellen</li>
+        </ul>
+      </article>
+    </main>
+
+    <footer class="footer-bottom">
+      <ul class="nav-list">
+        <li>
+          <a href="index.html"
+            ><img class="nav-img" src="./images/Home.png" alt="home logo"
+          /></a>
+        </li>
+        <li>
+          <a href="bookmark.html"
+            ><img
+              class="nav-img"
+              src="./images/Bookmark.png"
+              alt="bookmark logo"
+          /></a>
+        </li>
+        <li>
+          <a href="create.html"
+            ><img class="nav-img" src="./images/Create.png" alt="creat logo"
+          /></a>
+        </li>
+        <li>
+          <a href="profile.html"
+            ><img class="nav-img" src="./images/Profile.png" alt="profile logo"
+          /></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
