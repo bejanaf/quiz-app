@@ -1,0 +1,21 @@
+.navigation {
+}
+
+.navigation__container {
+  display: flex;
+  list-style: none;
+}
+
+.navigation__item {
+}
+
+.navigation__item--active a {
+  border: 2px solid greenyellow;
+  border-radius: 100vh;
+  xfont-weight: 800;
+  padding: 0.2rem 0.5rem 0.3rem;
+}
+
+.navigation__img {
+  width: 5rem;
+}

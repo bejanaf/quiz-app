@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Profil</h1>
+    <header class="header">
+      <h1 class="title center">Profile</h1>
     </header>
 
     <main>
-      <div class="profile-box">
+      <div class="profile__box">
         <img
           src="./images/bejan.jpg"
           alt="picture of bejan"
-          class="profile-pic"
+          class="profile__pic"
         />
         <h2>Bejan Afshar</h2>
       </div>
@@ -37,7 +37,7 @@
       </p>
 
       <p>Tags:</p>
-      <ul class="tags">
+      <ul class="profile__tags">
         <li class="list">NFTs</li>
         <li class="list">Katzen</li>
         <li class="list">Weintrauben</li>
@@ -47,32 +47,43 @@
       <button>Logout</button>
     </main>
 
-    <footer class="footer-bottom">
-      <ul class="nav-list">
-        <li>
-          <a href="index.html"
-            ><img class="nav-img" src="./images/Home.png" alt="home logo"
-          /></a>
-        </li>
-        <li>
-          <a href="bookmark.html"
-            ><img
-              class="nav-img"
-              src="./images/Bookmark.png"
-              alt="bookmark logo"
-          /></a>
-        </li>
-        <li>
-          <a href="create.html"
-            ><img class="nav-img" src="./images/Create.png" alt="creat logo"
-          /></a>
-        </li>
-        <li>
-          <a href="profile.html"
-            ><img class="nav-img" src="./images/Profile.png" alt="profile logo"
-          /></a>
-        </li>
-      </ul>
+    <footer>
+      <nav class="navigation">
+        <ul class="navigation__container">
+          <li class="navigation__item">
+            <a href="index.html"
+              ><img
+                class="navigation__img"
+                src="./images/Home.png"
+                alt="home logo"
+            /></a>
+          </li>
+          <li class="navigation__item">
+            <a href="bookmark.html"
+              ><img
+                class="navigation__img"
+                src="./images/Bookmark.png"
+                alt="bookmark logo"
+            /></a>
+          </li>
+          <li class="navigation__item">
+            <a href="create.html"
+              ><img
+                class="navigation__img"
+                src="./images/Create.png"
+                alt="creat logo"
+            /></a>
+          </li>
+          <li class="navigation__item navigation__item--active">
+            <a href="profile.html"
+              ><img
+                class="navigation__img"
+                src="./images/Profile.png"
+                alt="profile logo"
+            /></a>
+          </li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>

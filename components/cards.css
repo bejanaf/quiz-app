@@ -1,0 +1,21 @@
+.card {
+  background-color: hotpink;
+  border-bottom: 3px solid grey;
+  text-align: center;
+  margin: 5rem;
+  padding: 10px;
+}
+
+.card__bookmark {
+  position: relative;
+  left: 20%;
+  bottom: 2.2rem;
+  width: 4rem;
+  margin-bottom: -2.2rem; /* wieder abziehen was ich oben beigegeben habe */
+}
+
+.card__tags {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}

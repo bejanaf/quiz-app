@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header><h1>Ceate questions and answers!</h1></header>
+    <header class="header">
+      <h1 class="title center">Erstelle Fragen und Antowrten</h1>
+    </header>
 
     <main>
-      <form class="formular" action="">
+      <form class="formular__container" action="">
         <label for="quest"
           >Frage:
           <input
@@ -36,32 +38,43 @@
       </form>
     </main>
 
-    <footer class="footer-bottom">
-      <ul class="nav-list">
-        <li>
-          <a href="index.html"
-            ><img class="nav-img" src="./images/Home.png" alt="home logo"
-          /></a>
-        </li>
-        <li>
-          <a href="bookmark.html"
-            ><img
-              class="nav-img"
-              src="./images/Bookmark.png"
-              alt="bookmark logo"
-          /></a>
-        </li>
-        <li>
-          <a href="create.html"
-            ><img class="nav-img" src="./images/Create.png" alt="creat logo"
-          /></a>
-        </li>
-        <li>
-          <a href="profile.html"
-            ><img class="nav-img" src="./images/Profile.png" alt="profile logo"
-          /></a>
-        </li>
-      </ul>
+    <footer>
+      <nav class="navigation">
+        <ul class="navigation__container">
+          <li class="navigation__item">
+            <a href="index.html"
+              ><img
+                class="navigation__img"
+                src="./images/Home.png"
+                alt="home logo"
+            /></a>
+          </li>
+          <li class="navigation__item">
+            <a href="bookmark.html"
+              ><img
+                class="navigation__img"
+                src="./images/Bookmark.png"
+                alt="bookmark logo"
+            /></a>
+          </li>
+          <li class="navigation__item navigation__item--active">
+            <a href="create.html"
+              ><img
+                class="navigation__img"
+                src="./images/Create.png"
+                alt="creat logo"
+            /></a>
+          </li>
+          <li class="navigation__item">
+            <a href="profile.html"
+              ><img
+                class="navigation__img"
+                src="./images/Profile.png"
+                alt="profile logo"
+            /></a>
+          </li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>
