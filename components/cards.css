@@ -2,16 +2,29 @@
   background-color: hotpink;
   border-bottom: 3px solid grey;
   text-align: center;
-  margin: 5rem;
+  margin: 40px 5rem;
   padding: 10px;
+
+  position: relative;
+  transition: transform 2s ease-out;
+  box-shadow: 3px 4px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
 .card__bookmark {
-  position: relative;
+  position: absolute;
+  top: -10px;
+  left: 80%;
+  width: 4rem;
+
+  /*
   left: 20%;
   bottom: 2.2rem;
   width: 4rem;
-  margin-bottom: -2.2rem; /* wieder abziehen was ich oben beigegeben habe */
+  margin-bottom: -2.2rem; */ /* wieder abziehen was ich oben beigegeben habe */
+}
+
+.card__bookmark:hover {
+  transform: scale(1.5);
 }
 
 .card__tags {
