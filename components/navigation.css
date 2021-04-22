@@ -5,9 +5,14 @@
 .navigation__container {
   display: flex;
   list-style: none;
+  justify-content: space-around;
+  margin-left: 20%;
+  margin-right: 20%;
+  flex-wrap: nowrap;
 }
 
 .navigation__item {
+  margin: 7px;
 }
 
 .navigation__item--active a {

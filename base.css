@@ -23,9 +23,6 @@ main {
 footer {
   background-image: var(--gradient-green2);
   border-top: 3px grey solid;
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
   position: fixed;
   left: 0;
   right: 0;
@@ -51,9 +48,10 @@ footer {
 }
 
 .list {
-  border: 3px solid white;
   padding: 3px;
   border-radius: 20%;
+  background-color: var(--primary-light);
+  margin-top: 7px;
 }
 
 .profile__box {
@@ -75,13 +73,37 @@ footer {
 }
 
 .title__center {
-  border-bottom: black 3px solid;
+  text-shadow: 2px 2px 4px black;
   xopacity: 0.5;
+}
+
+.button {
+  background-color: var(--primary-light);
+  cursor: pointer;
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
 }
 
 p {
   margin: 15px 10px;
 }
+
+details {
+  border: 3px solid var(--primary-dark);
+  border-radius: 0;
+  margin: 0;
+  padding: .5em .5em 0;
+}
+
+xsummary {
+  margin: -.5em -.5em 0;
+  padding: .5em;
+}
+
+
+
 
 :root {
   --primary-lightest: hsl(81, 60%, 96);
