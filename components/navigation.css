@@ -1,5 +1,5 @@
 .navigation {
-  padding: 20px;
+  padding: 0.5rem;
 }
 
 .navigation__container {
@@ -9,6 +9,7 @@
   margin-left: 20%;
   margin-right: 20%;
   flex-wrap: nowrap;
+  padding-left: 0;
 }
 
 .navigation__item {
@@ -16,10 +17,8 @@
 }
 
 .navigation__item--active a {
-  xborder: 2px solid lightcoral;
   border: 2px solid var(--primary);
   border-radius: 3rem;
-  xfont-weight: 800;
   padding: 2.1rem 0.5rem 0.3rem;
 }
 

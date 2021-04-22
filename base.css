@@ -5,13 +5,14 @@
 
 body {
   line-height: 1.5;
+  font-size: var(--fs-200);
 }
 
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  margin-bottom: 100px;
+  xmargin-bottom: 20rem;
   z-index: 1000;
 }
 
@@ -21,7 +22,7 @@ main {
 }
 
 footer {
-  background-image: var(--gradient-green2);
+  background-image: var(--gradient-green-to-top);
   border-top: 3px grey solid;
   position: fixed;
   left: 0;
@@ -39,7 +40,7 @@ footer {
 }
 
 .header {
-  background-image: var(--gradient-green2);
+  background-image: var(--gradient-green-to-bottom);
   border-bottom: 3px solid grey;
   display: flex;
   justify-content: center;
@@ -74,71 +75,117 @@ footer {
 
 .title__center {
   text-shadow: 2px 2px 4px black;
-  xopacity: 0.5;
 }
 
-.button {
+.button__logout {
   background-color: var(--primary-light);
   cursor: pointer;
   width: 100px;
   padding: 10px;
   margin: 10px;
   border-radius: 20px;
+  box-shadow: 0.2rem 0.3rem 4px var(--black);
+}
+
+.button__create {
+  background-color: var(--primary-light);
+  cursor: pointer;
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0.2rem 0.3rem 4px var(--black);
 }
 
 p {
-  margin: 15px 10px;
+  margin: var(--fs-200) 10px;
+}
+
+h1 {
+  font-size: var(--fs-600);
+  margin: 0;
+  xcolor: var(--secondary-darker);
+  color: var(--white);
+}
+
+h2 {
+  font-size: var(--fs-300);
+  margin: 0;
 }
 
 details {
   border: 3px solid var(--primary-dark);
-  border-radius: 0;
-  margin: 0;
-  padding: .5em .5em 0;
+  background-color: var(--primary-dark);
+  border-radius: 20px;
+  margin: 0.2rem auto;
+  width: 40%;
+  padding: 0.1rem;
+  xbox-shadow: 0.5rem 0.25rem 0.25rem black;
 }
 
 xsummary {
-  margin: -.5em -.5em 0;
-  padding: .5em;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
 }
 
-
-
-
 :root {
-  --primary-lightest: hsl(81, 60%, 96);
+  --primary-lightest: hsl(81, 60%, 96%);
   --primary-light: hsl(81, 60%, 85%);
   --primary: hsl(81, 60%, 60%);
   --primary-dark: hsl(81, 60%, 25%);
-  --primary-darker: hsl(81,60,10);
+  --primary-darker: hsl(81, 60%, 10%);
 
-  --secondary-lightest: hsl(261,60,96);
-  --secondary-light: hsl(261,60,85);
-  --secondary: hsl(261,60,60);
-  --secondary-dark: hsl(261,60,25);
-  --secondary-darker: hsl(261,60,10);
+  --secondary-lightest: hsl(261, 60%, 96%);
+  --secondary-light: hsl(261, 60%, 85%);
+  --secondary: hsl(261, 60%, 60%);
+  --secondary-dark: hsl(261, 60%, 25%);
+  --secondary-darker: hsl(261, 60%, 10%);
 
   --black: #211103;
   --grey: hsl(201, 7%, 62%);
   --white: #fff;
 
-  --gradient-green: linear-gradient( to right, var(--primary-dark), var(--primary-light));
-  --gradient-green2: linear-gradient( to left, var(--primary-dark), var(--primary-light));
+  --gradient-green-to-right: linear-gradient(
+    to right,
+    var(--primary-dark),
+    var(--primary-light)
+  );
+  --gradient-green-to-left: linear-gradient(
+    to left,
+    var(--primary-dark),
+    var(--primary-light)
+  );
 
+  --gradient-green-to-bottom: linear-gradient(
+    to bottom,
+    var(--primary-dark),
+    var(--primary-light)
+  );
 
-  /*
+  --gradient-green-to-top: linear-gradient(
+    to top,
+    var(--primary-dark),
+    var(--primary-light)
+  );
+
   --ff-sans: sans-serif;
   --ff-serif: serif;
 
-  /* font-size: 
   --fs-200: 0.75rem;
-  --fs-300: 0.75rem;
-  --fs-400: 0.75rem;
-  --fs-500: 0.75rem;
-  --fs-600: 0.75rem;
-  --fs-900: 0.75rem;
-
+  --fs-300: 1rem;
+  --fs-400: 1.25rem;
+  --fs-500: 1.375rem;
+  --fs-600: 1.75rem;
+  --fs-900: 2.125rem;
 }
 
+.create__container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
 
-
+* *::before,
+*::after {
+}

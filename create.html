@@ -12,30 +12,21 @@
       <h1 class="title center">Erstelle neue Kärtchen</h1>
     </header>
 
-    <main>
-      <form class="formular__container" action="">
-        <label for="quest"
-          >Frage:
-          <input
-            type="text"
-            name="quest"
-            placeholder="schreibe hier deine Frage auf..."
-          />
-        </label>
-        <label for="answer"
-          >Antwort:
-          <input
-            type="text"
-            name="answer"
-            placeholder="schreibe hier deine Antwort auf..."
-          /> </label
-        ><br />
-        <label for="tags"
-          >Tags:
-          <input type="text" name="tags" placeholder="hilfreiche Tags" />
-        </label>
-        <button class="button">Send!</button>
-      </form>
+    <main class="create__container">
+      <label for="quest">Frage:</label>
+      <textarea id="create__quest" name="create__quest" rows="6" cols="10">
+          Schreibe hier deine Frage...
+        </textarea
+      >
+
+      <label for="create__answer">Antwort:</label>
+      <textarea id="create__answer" name="create__answer" rows="6" cols="10">
+          Schreibe hier deine Antwort...
+        </textarea
+      >
+      <label for="tags">Tags:</label>
+      <input type="text" name="tags" placeholder="hilfreiche Tags" />
+      <button class="button__create">Send!</button>
     </main>
 
     <footer>

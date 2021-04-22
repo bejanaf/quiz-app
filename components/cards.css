@@ -1,13 +1,15 @@
 .card {
   /* background-color: hotpink; */
-  background-image: var(--gradient-green);
+  background-image: var(--gradient-green-to-right);
   border-bottom: 3px solid grey;
   text-align: center;
-  margin: 40px 5rem;
-  padding: 10px;
+  margin-bottom: 2rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  padding: 1rem;
   position: relative;
   transition: transform 2s ease-out;
-  box-shadow: 3px 4px 3px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: box-shadow: 1rem 0.5rem 0.5rem black;
   border-radius: 20px;
 }
 
@@ -15,7 +17,7 @@
   position: absolute;
   top: -15px;
   left: 93%;
-  width: 4rem;
+  width: 2rem;
 
   /*
   left: 20%;
@@ -32,4 +34,5 @@
   display: flex;
   list-style: none;
   justify-content: space-around;
+  padding-left: 0;
 }
