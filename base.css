@@ -21,7 +21,7 @@ main {
 }
 
 footer {
-  background-color: purple;
+  background-image: var(--gradient-green2);
   border-top: 3px grey solid;
   display: flex;
   justify-content: space-around;
@@ -42,7 +42,7 @@ footer {
 }
 
 .header {
-  background-color: blueviolet;
+  background-image: var(--gradient-green2);
   border-bottom: 3px solid grey;
   display: flex;
   justify-content: center;
@@ -51,7 +51,7 @@ footer {
 }
 
 .list {
-  border: 3px solid grey;
+  border: 3px solid white;
   padding: 3px;
   border-radius: 20%;
 }
@@ -82,3 +82,41 @@ footer {
 p {
   margin: 15px 10px;
 }
+
+:root {
+  --primary-lightest: hsl(81, 60%, 96);
+  --primary-light: hsl(81, 60%, 85%);
+  --primary: hsl(81, 60%, 60%);
+  --primary-dark: hsl(81, 60%, 25%);
+  --primary-darker: hsl(81,60,10);
+
+  --secondary-lightest: hsl(261,60,96);
+  --secondary-light: hsl(261,60,85);
+  --secondary: hsl(261,60,60);
+  --secondary-dark: hsl(261,60,25);
+  --secondary-darker: hsl(261,60,10);
+
+  --black: #211103;
+  --grey: hsl(201, 7%, 62%);
+  --white: #fff;
+
+  --gradient-green: linear-gradient( to right, var(--primary-dark), var(--primary-light));
+  --gradient-green2: linear-gradient( to left, var(--primary-dark), var(--primary-light));
+
+
+  /*
+  --ff-sans: sans-serif;
+  --ff-serif: serif;
+
+  /* font-size: 
+  --fs-200: 0.75rem;
+  --fs-300: 0.75rem;
+  --fs-400: 0.75rem;
+  --fs-500: 0.75rem;
+  --fs-600: 0.75rem;
+  --fs-900: 0.75rem;
+
+}
+
+
+

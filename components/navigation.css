@@ -11,7 +11,8 @@
 }
 
 .navigation__item--active a {
-  border: 2px solid lightcoral;
+  xborder: 2px solid lightcoral;
+  border: 2px solid var(--primary);
   border-radius: 3rem;
   xfont-weight: 800;
   padding: 2.1rem 0.5rem 0.3rem;
