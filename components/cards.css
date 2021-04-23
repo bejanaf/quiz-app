@@ -1,6 +1,5 @@
 .card {
-  /* background-color: hotpink; */
-  background-image: var(--gradient-green-to-right);
+  background-color: var(--primary-light);
   border-bottom: 3px solid grey;
   text-align: center;
   margin-bottom: 2rem;
@@ -13,21 +12,23 @@
   border-radius: 20px;
 }
 
+.card:nth-child(2) {
+  background-color: var(--secondary-light);
+}
+
 .card__bookmark {
   position: absolute;
   top: -15px;
   left: 93%;
   width: 2rem;
-
-  /*
-  left: 20%;
-  bottom: 2.2rem;
-  width: 4rem;
-  margin-bottom: -2.2rem; */ /* wieder abziehen was ich oben beigegeben habe */
 }
 
 .card__bookmark:hover {
   transform: rotate(270deg) scale(1.5);
+}
+
+.card__details:nth-child(2) {
+  background-color: var(--secondary);
 }
 
 .card__tags {
@@ -35,4 +36,13 @@
   list-style: none;
   justify-content: space-around;
   padding-left: 0;
+}
+
+.list {
+  padding: 3px;
+  border-radius: 20%;
+  background-color: white;
+  xbackground-color: var(--primary-light);
+  margin-bottom: 7px;
+  margin-top: 7px;
 }
